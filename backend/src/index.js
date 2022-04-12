@@ -5,6 +5,7 @@ const resolvers = require('./resolvers');
 const NasaImageAPI = require('./dataSource')
 
 const server = new ApolloServer({ 
+  cors: true,
   typeDefs,
   resolvers,
   dataSources: () => ({

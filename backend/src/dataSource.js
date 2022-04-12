@@ -7,11 +7,15 @@ class NasaImageAPI extends RESTDataSource {
   }
 
   imageReducer(image) {
+    let href = "";
+    if(image.links) {
+      href = image.links[0].href; 
+    }
     return {
       id: Math.random().toString(36).slice(2),
       title: image.data[0].title || "",
       description: image.data[0].description || "",
-      href: image.href || ""
+      href
     }
   } 
 

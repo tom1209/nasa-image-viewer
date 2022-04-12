@@ -1,0 +1,19 @@
+.imageCardContainer {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1em;
+}
+
+.imgContainer img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.titleContainer {
+  color:black;
+  font-weight: bold;
+  max-width: 100%;
+  text-overflow: ellipsis;
+}
