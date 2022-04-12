@@ -1,0 +1,27 @@
+.search {
+  padding: 10px;
+  font-size: 18px;
+  margin-left: 1em;
+}
+
+.searchButton {
+  padding: 15px;
+  width: 90%;
+  background-color: aliceblue;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(31, 29, 29);
+  border: none;
+  margin-top: 2em;
+}
+
+.searchButton:hover {
+  transition: 1s ease-in-out;
+  background: #032547;
+  color: aliceblue;
+}
+
+.searchButton:active {
+  border: 1px solid black;
+  box-shadow: 0 1px #666;
+}
