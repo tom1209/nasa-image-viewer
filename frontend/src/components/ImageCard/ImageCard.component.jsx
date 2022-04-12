@@ -2,7 +2,6 @@ import "./ImageCard.component.css";
 
 const ImageCard = ({image}) => {
   const {title, href, description} = image;
-  console.log(href);
   return (
     <div className="imageCardContainer">
       <div className="imgContainer">

@@ -31,7 +31,7 @@ const SearchBar = ()=> {
       setSearchResults(data);
       navigate('/search');
     }
-  });
+  }, [data]);
 
 
   return (

@@ -12,7 +12,7 @@ const SearchResults = () => {
   const searchResults = useContext(SearchContext);
 
   const {images} = searchResults[0];
-  console.log(images);
+
   return (
     <div className="searchContainer">
 
