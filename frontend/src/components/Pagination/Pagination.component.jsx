@@ -16,7 +16,6 @@ const Pagination = () => {
   const [page, setPage] = useState("1")   
   const [changeImagePage, { loading, error, data }] = useLazyQuery(IMAGE_QUERY);
 
-  console.log(searchResults);
   const search = searchResults.search || "";
   const total = searchResults.data ?  searchResults.data.images.total : 0;
 
