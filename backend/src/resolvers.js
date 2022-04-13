@@ -1,6 +1,6 @@
 module.exports = {
   Query: {
-    images: (_, {q}, {dataSources}) =>
-      dataSources.nasaImageAPI.getImageByQuery({q})
+    images: (_, {q, from}, {dataSources}) =>
+      dataSources.nasaImageAPI.getImageByQuery({q, from})
   }
 }

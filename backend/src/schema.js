@@ -8,8 +8,13 @@ const typeDefs = gql`
     title: String!
   }
 
+  type ImageResponse {
+    images: [NasaImage]!
+    total: Int!
+  }
+
   type Query {
-    images(q: String!): [NasaImage]!
+    images(q: String!, from: String!): ImageResponse!
   }
 `;
 
