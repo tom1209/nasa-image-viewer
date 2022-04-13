@@ -1,0 +1,35 @@
+.paginationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paginateItem {
+  margin: 1em;
+}
+
+.pageSelectButton {
+  padding: 15px;
+  width: 10em;
+  background-color: aliceblue;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(31, 29, 29);
+  border: none;
+  margin-top: 2em;
+}
+
+.pageSelectButton:hover {
+  transition: 1s ease-in-out;
+  background: #032547;
+  color: aliceblue;
+}
+
+.pageSelectButton:active {
+  border: 1px solid black;
+  box-shadow: 0 1px #666;
+}
+
+.pageSelect {
+  padding: 1em;
+}

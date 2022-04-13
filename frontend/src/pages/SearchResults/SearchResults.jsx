@@ -7,11 +7,17 @@ import SearchContext from "../../context/SearchContext";
 
 import SearchBar from "../../components/SearchBar/SearchBar.component";
 import ImageCard from "../../components/ImageCard/ImageCard.component";
+import Pagination from "../../components/Pagination/Pagination.component";
 
 const SearchResults = () => {
   const searchResults = useContext(SearchContext);
 
-  const {images} = searchResults[0];
+  let images = [];
+  let total = 0;
+
+  if(searchResults[0].data) {
+    images = searchResults[0].data.images.images;
+  }
 
   return (
     <div className="searchContainer">
@@ -25,6 +31,10 @@ const SearchResults = () => {
         <div className="resultSearchContainer">
           <SearchBar />
         </div>
+      </div>
+
+      <div>
+        <Pagination />
       </div>
 
       <div className="resultsbody">

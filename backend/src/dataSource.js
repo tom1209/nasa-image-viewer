@@ -19,10 +19,15 @@ class NasaImageAPI extends RESTDataSource {
     }
   } 
 
-  async getImageByQuery({q}) {
-    const response = await this.get("search", {q});
+  async getImageByQuery({q, from}) {
+    const response = await this.get("search", {q, page:from});
     const { items } = response.collection;
-    return items.map( (image)=> this.imageReducer(image));
+    const images = items.map( (image)=> this.imageReducer(image));
+    const { total_hits } = response.collection.metadata;
+    return {
+      images,
+      total: total_hits
+    }
   }
 }
 

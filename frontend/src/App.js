@@ -12,7 +12,7 @@ function App() {
       <SearchProvider>
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="search" element={<SearchResults />}/>
+            <Route path="search/:page" element={<SearchResults />}/>
         </Routes>
       </SearchProvider>
     </BrowserRouter>
